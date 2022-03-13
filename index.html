@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Unibertsoa</title>
+
+    <link rel="stylesheet" href="css/css/estilo.min.css">
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+
+    <!-- Evitar error de favicon en vscode -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <nav>
+        <p class="hasi" title="Hasierara joan"> <img src="img/icons/home.png"> <span>hasi</span></p>
+        <p id="fav" title="Gustokoenak ikusi"><img src="img/icons/fav.png"><span>fav</span></p>
+        <p id="berriz" title="Ikusi dituzunak berriro ikusi"><img src="img/icons/berriro-ikusi.png"><span>berriz</span></p>
+        <p id="login" title="Zure gune pertsonalera sartu"><img src="img/icons/login.png"><span>login</span></p>
+    </nav>
+    
+    <div id="contenedor">
+
+        <!-- Cabecera -->
+        <header class="hasi">
+            <h1>Marvel Unibertsoa</h1>  
+        </header>
+
+        <!-- Banner que mostrará elemento seleccionado -->
+        <div id="banner">
+            <div id="img_banner"></div>
+            <div id="info_banner">
+                
+            </div>
+        </div>
+
+        <!-- Parte principal: sliders -->
+        <main>
+            <!-- Personajes -->
+            <section class="slider" id="slider_personajes">
+                <h2 id="personajes_tit">Pertsonaiak</h2>
+                <i class="desplazar prev">&lt;</i>
+                <i class="desplazar next">&gt;</i>
+                <div class="thumbnails" id="personajes_div"></div>
+            </section>
+            
+            <!-- Comics -->
+            <section class="slider"  id="slider_comics">
+                <h2 id="comics_tit">Komikiak</h2>
+                <i class="desplazar prev">&lt;</i>
+                <i class="desplazar next">&gt;</i>
+                <div class="thumbnails" id="comics_div"></div>
+            </section>
+
+            <!-- Series -->
+            <section class="slider"  id="slider_series">
+                <h2 id="comics_tit">Serieak</h2>
+                <i class="desplazar prev">&lt;</i>
+                <i class="desplazar next">&gt;</i>
+                <div class="thumbnails" id="series_div"></div>
+            </section>
+
+            <!-- Gustokoenak / favoritos -->
+            <section class="slider" id="slider_gustokoenak">
+                <h2 id="gustokoenak_tit">Gustokoenak</h2>
+                <i class="desplazar prev">&lt;</i>
+                <i class="desplazar next">&gt;</i>
+                <div class="thumbnails" id="gustokoenak_div"></div>
+            </section>
+
+            <!-- Berriro ikusi -->
+            <section class="slider" id="slider_berriro">
+                <h2 id="berriro_tit">Berriro ikusi</h2>
+                <i class="desplazar prev">&lt;</i>
+                <i class="desplazar next">&gt;</i>
+                <div class="thumbnails" id="berriro_div"></div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <h5>Urko Sáenz de Buruaga</h5>
+        </footer>
+    </div>
+</body>
+</html>
